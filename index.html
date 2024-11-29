@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-image: url('r334.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+        }
+        h1 {
+            color: rgb(255, 34, 0);
+            text-align: center;
+            margin-top: 20px;
+        }
+        div {
+            width: 400px;
+            background-color: aliceblue;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: rgb(255, 34, 0);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: rgb(200, 30, 0);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>R34</h1>
+    <div>
+        <h2 style="text-align: center;">Survey Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>How likely is it that you would recommend this program to a friend?</label>
+            <input type="radio" id="definitely" name="recommend" value="definitely" required>
+            <label for="definitely">Definitely</label>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="not_sure" name="recommend" value="not_sure">
+            <label for="not_sure">Not sure</label>
+
+            <label for="likeMost">What do you like most here?</label>
+            <select id="likeMost" name="likeMost" required>
+                <option value="front_end">Front-end Projects</option>
+                <option value="back_end">Back-end Projects</option>
+                <option value="data_visualization">Data Visualization</option>
+            </select>
+
+            <label>Things that should be improved in the future (Check all that apply):</label>
+            <input type="checkbox" id="front_end" name="improvements" value="front_end">
+            <label for="front_end">Front-end Projects</label>
+            <input type="checkbox" id="back_end" name="improvements" value="back_end">
+            <label for="back_end">Back-end Projects</label>
+            <input type="checkbox" id="data_visualization" name="improvements" value="data_visualization">
+            <label for="data_visualization">Data Visualization</label>
+
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
